@@ -145,7 +145,6 @@ export default function ZabbixDashboard() {
                     availabilityRate={model.availabilityRate}
                     totalHosts={model.totalHosts}
                     onlineHosts={model.onlineHosts}
-                    criticalPressure={model.criticalPressure}
                     rangeControl={
                         <ModernDateRangeSelector
                             preset={rangePreset}

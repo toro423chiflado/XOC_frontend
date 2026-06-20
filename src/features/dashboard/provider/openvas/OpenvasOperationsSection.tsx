@@ -1,7 +1,7 @@
-import { ChevronLeft, ChevronRight, FileSearch } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import type { OpenvasScanRow, OpenvasTopCveItem } from './types';
-import { formatOpenvasDate, getSeverityMeta } from './utils';
+import { formatOpenvasDate } from './utils';
 
 interface OpenvasOperationsSectionProps {
     scanRows: OpenvasScanRow[];
@@ -11,7 +11,6 @@ interface OpenvasOperationsSectionProps {
 
 export function OpenvasOperationsSection({
     scanRows,
-    topCVEs,
     onOpenScan
 }: OpenvasOperationsSectionProps) {
     const [reportFilter, setReportFilter] = useState<'all' | 'completed' | 'running' | 'failed'>('all');

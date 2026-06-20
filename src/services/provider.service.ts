@@ -141,6 +141,8 @@ export interface NessusMetrics {
     vulnerabilities: { critical: number; high: number; medium: number; low: number; info: number };
     scansCompleted: number;
     hostsScanned: number;
+    topCVEs?: Array<{ cve: string; severity: string; count: number }>;
+    recentFindings?: Array<{ id: string; name: string; severity: string; host?: string; detectedAt?: string }>;
     scanDetails?: Array<{
         id: string;
         target: string;
@@ -216,7 +218,7 @@ export const providerService = {
     getWazuhScanDetail: async (id: string): Promise<any> => {
         try {
             const [summary, findings] = await Promise.all([
-                providerApiService.getScanDetail(id, { domain: 'soc' }),
+                providerApiService.getScanDetail(id),
                 providerApiService.getScanFindings(id, { domain: 'soc' }).catch(err => {
                     console.error('Error fetching Wazuh findings for ID', id, err);
                     return [];

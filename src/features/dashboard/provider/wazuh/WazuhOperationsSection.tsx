@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, ShieldAlert } from 'lucide-react';
 import type { WazuhDashboardModel } from './types';
-import { getWazuhSeverityMeta } from './utils';
 
 export function WazuhOperationsSection({
     model,

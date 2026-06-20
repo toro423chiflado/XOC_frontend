@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { BarChart3, ChevronRight, Clock3, Globe2, Radar, Server, Target } from 'lucide-react';
+import { BarChart3, ChevronRight, Globe2, Radar, Target } from 'lucide-react';
 import {
     Area,
     AreaChart,
@@ -29,7 +29,6 @@ export function OpenvasExposureSection({
     trendData,
     cutVolume,
     hostExposure,
-    recentFindings,
     selectedHost,
     onSelectHost
 }: OpenvasExposureSectionProps) {

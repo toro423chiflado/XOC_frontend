@@ -69,10 +69,10 @@ export default function Integrations() {
 
     const isToolActive = (toolId: string) => {
         const hasActiveKey = apiKeys.some(
-            (k) => (k.integrationType === toolId || (toolId === 'uptime_kuma' && k.integrationType === 'uptime') || (toolId === 'nessus' && k.integrationType === 'tenable')) && k.isActive === true
+            (k) => (k.integrationType === toolId || (toolId === 'nessus' && k.integrationType === 'tenable')) && k.isActive === true
         );
         const hasIntegration = integrations.some(
-            (i) => i.provider === toolId || (toolId === 'uptime_kuma' && i.provider === 'uptime') || (toolId === 'nessus' && i.provider === 'tenable')
+            (i) => i.provider === toolId || (toolId === 'nessus' && i.provider === 'tenable')
         );
         return hasActiveKey || hasIntegration;
     };

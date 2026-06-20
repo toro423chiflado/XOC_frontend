@@ -1310,7 +1310,7 @@ const normalizeWazuhAnalytics = (payload: any): WazuhMetrics => {
             ['low', totals.low],
             ['info', totals.info]
         ] as const;
-        const [key, value] = entries.sort((left, right) => right[1] - left[1])[0];
+        const [key, value] = [...entries].sort((left, right) => right[1] - left[1])[0];
         return value > 0 ? key : 'none';
     };
 
@@ -1371,17 +1371,6 @@ const normalizeWazuhAnalytics = (payload: any): WazuhMetrics => {
             medium: acc.medium + pickNumber(day?.medium),
             low: acc.low + pickNumber(day?.low),
             info: acc.info + pickNumber(day?.info)
-        }),
-        { critical: 0, high: 0, medium: 0, low: 0, info: 0 }
-    );
-
-    const totalsFromHistoricalScans = historicalScans.reduce(
-        (acc: { critical: number; high: number; medium: number; low: number; info: number }, scan: any) => ({
-            critical: acc.critical + pickNumber(scan?.critical_count, scan?.disaster_count),
-            high: acc.high + pickNumber(scan?.high_count),
-            medium: acc.medium + pickNumber(scan?.medium_count, scan?.average_count),
-            low: acc.low + pickNumber(scan?.low_count, scan?.warning_count),
-            info: acc.info + pickNumber(scan?.info_count)
         }),
         { critical: 0, high: 0, medium: 0, low: 0, info: 0 }
     );
@@ -1456,7 +1445,7 @@ const normalizeWazuhAnalytics = (payload: any): WazuhMetrics => {
     const latestSignature = parseJsonRecord(latestMeta?.snapshot_signature);
     const snapshotTopRules = Array.isArray(latestMeta?.tops?.top_rules)
         ? mapTopItems(latestMeta.tops.top_rules, currentSnapshot.totalAlerts, ['desc', 'name', 'rule', 'description'])
-        : topRules.map((item) => ({
+        : topRules.map((item: { rule: string; count: number }) => ({
             name: item.rule,
             count: item.count,
             sharePct: currentSnapshot.totalAlerts > 0 ? Math.round((item.count / currentSnapshot.totalAlerts) * 100) : 0

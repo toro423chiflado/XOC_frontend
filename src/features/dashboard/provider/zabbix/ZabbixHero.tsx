@@ -9,7 +9,6 @@ export function ZabbixHero({
     availabilityRate,
     totalHosts,
     onlineHosts,
-    criticalPressure,
     rangeControl,
     onRefresh,
     isLoading
@@ -21,7 +20,6 @@ export function ZabbixHero({
     availabilityRate: number | null;
     totalHosts: number;
     onlineHosts: number;
-    criticalPressure: number;
     rangeControl: ReactNode;
     onRefresh: () => void;
     isLoading: boolean;

@@ -30,8 +30,7 @@ export default function ModernDateRangeSelector({
     onCustomFromChange,
     onCustomToChange,
     onApply,
-    isLoading,
-    hideTitle = false
+    isLoading
 }: ModernDateRangeSelectorProps) {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);

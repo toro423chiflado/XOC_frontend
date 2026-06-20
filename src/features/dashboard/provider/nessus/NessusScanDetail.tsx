@@ -122,7 +122,6 @@ export default function NessusScanDetail() {
     const totalPages = Math.max(1, Math.ceil(filteredFindings.length / itemsPerPage));
     const paginatedFindings = filteredFindings.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
     const totalFindings = Object.values(counts).reduce((sum, value) => sum + Number(value || 0), 0);
-    const criticalPressure = totalFindings > 0 ? Math.round(((counts.critical + counts.high) / totalFindings) * 100) : 0;
 
     useEffect(() => {
         setCurrentPage(1);
