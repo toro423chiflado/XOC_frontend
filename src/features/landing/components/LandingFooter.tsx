@@ -11,7 +11,7 @@ export default function LandingFooter() {
               <div className="col-span-1 md:col-span-2">
                   <div className="flex items-center justify-center md:justify-start gap-4 mb-6">
                       <div className="w-10 h-10 bg-neon-green/10 border border-neon-green/30 rounded-xl flex items-center justify-center overflow-hidden">
-                          <img src="/Logo_XOC_Vectorial.svg" alt="XOC" className="w-6 h-6 object-contain" />
+                          <img src="./Logo_XOC_Vectorial.svg" alt="XOC" className="w-6 h-6 object-contain" />
                       </div>
                       <div className="flex flex-col">
                           <span className="text-xl font-black tracking-tight text-white uppercase">XOC Platform</span>

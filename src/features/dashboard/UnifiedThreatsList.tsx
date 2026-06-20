@@ -35,7 +35,7 @@ export default function UnifiedThreatsList() {
                     allThreats.push(...openvas.topCVEs.map((c: any) => ({
                         ...c,
                         source: 'OpenVAS',
-                        sourceIcon: '/greenbone_openvass_logo.svg'
+                        sourceIcon: './greenbone_openvass_logo.svg'
                     })));
                 }
 
@@ -44,7 +44,7 @@ export default function UnifiedThreatsList() {
                     allThreats.push(...insightvm.topCVEs.map((c: any) => ({
                         ...c,
                         source: 'InsightVM',
-                        sourceIcon: '/RPD.svg'
+                        sourceIcon: './RPD.svg'
                     })));
                 }
 

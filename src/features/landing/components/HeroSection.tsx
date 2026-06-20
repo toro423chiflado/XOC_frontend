@@ -38,7 +38,7 @@ export default function HeroSection() {
               />
               <div className="bg-black/60 border border-neon-green/30 p-8 rounded-full backdrop-blur-xl relative z-10 shadow-[0_0_40px_rgba(0,255,159,0.2)]">
                   <img
-                      src="/Logo_XOC_Vectorial.svg"
+                      src="./Logo_XOC_Vectorial.svg"
                       alt="XOC Logo Central"
                       className="w-24 h-24 lg:w-32 lg:h-32 object-contain mx-auto relative z-10 drop-shadow-[0_0_15px_rgba(0,255,159,0.5)]"
                   />

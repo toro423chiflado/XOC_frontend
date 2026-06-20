@@ -56,7 +56,7 @@ export default function AuthLayout({ children, title, subtitle }: AuthLayoutProp
                             className="absolute inset-0 bg-neon-blue/30 blur-3xl rounded-full"
                         />
                         <img
-                            src="/Logo_XOC_Vectorial.svg"
+                            src="./Logo_XOC_Vectorial.svg"
                             alt="XOC Logo"
                             className="w-32 h-32 mx-auto mb-4 relative z-10 drop-shadow-[0_0_15px_rgba(0,240,255,0.5)]"
                         />

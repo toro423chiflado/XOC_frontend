@@ -69,7 +69,7 @@ export default function WelcomeTransition({ onComplete, userName }: WelcomeTrans
                             <div className="absolute inset-0 bg-neon-blue/20 blur-[100px] rounded-full animate-pulse" />
 
                             <img
-                                src="/Logo_XOC_Vectorial.svg"
+                                src="./Logo_XOC_Vectorial.svg"
                                 alt="XOC Logo"
                                 className="w-40 h-40 relative z-10"
                             />

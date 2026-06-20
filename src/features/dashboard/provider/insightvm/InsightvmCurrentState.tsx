@@ -66,7 +66,7 @@ export default function InsightvmCurrentState() {
                     <div className="flex items-center gap-4">
                         <button onClick={() => navigate('/dashboard/insightvm')} className="p-2 hover:bg-white/5 rounded-lg border border-white/5 transition-colors"><ArrowLeft className="w-5 h-5 text-gray-400" /></button>
                         <div className="p-3 bg-white/5 border border-white/10 rounded-lg">
-                            <img src="/RPD.svg" alt="Rapid7 Logo" className="w-8 h-8 object-contain" />
+                            <img src="./RPD.svg" alt="Rapid7 Logo" className="w-8 h-8 object-contain" />
                         </div>
                         <div>
                             <h2 className="text-2xl font-black text-white uppercase tracking-tighter">Estado Crítico Actual</h2>

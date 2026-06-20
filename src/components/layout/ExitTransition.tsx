@@ -48,7 +48,7 @@ export default function ExitTransition({ onComplete }: ExitTransitionProps) {
                     <div className="absolute inset-0 bg-neon-blue/20 blur-[100px] rounded-full" />
 
                     <img
-                        src="/Logo_XOC_Vectorial.svg"
+                        src="./Logo_XOC_Vectorial.svg"
                         alt="XOC Logo"
                         className="w-32 h-32 relative z-10"
                     />

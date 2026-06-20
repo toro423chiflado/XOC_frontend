@@ -162,31 +162,31 @@ export default function XSIAMCommandCenter() {
                 // Build dynamic source list
                 const sources = [];
                 if (isOpenvasActive) {
-                    sources.push({ id: 'openvas', label: 'OpenVAS', icon: '/greenbone_openvass_logo.svg', type: 'image', active: true });
+                    sources.push({ id: 'openvas', label: 'OpenVAS', icon: './greenbone_openvass_logo.svg', type: 'image', active: true });
                 }
                 if (isInsightvmActive) {
-                    sources.push({ id: 'insightvm', label: 'InsightVM', icon: '/RPD.svg', type: 'image', active: true });
+                    sources.push({ id: 'insightvm', label: 'InsightVM', icon: './RPD.svg', type: 'image', active: true });
                 }
                 if (isWazuhActive) {
-                    sources.push({ id: 'wazuh', label: 'Wazuh SIEM', icon: '/wazuuu.svg', type: 'image', active: true });
+                    sources.push({ id: 'wazuh', label: 'Wazuh SIEM', icon: './wazuuu.svg', type: 'image', active: true });
                 }
                 if (isZabbixActive) {
-                    sources.push({ id: 'zabbix', label: 'Zabbix', icon: '/Zabbix_logo.svg', type: 'image', active: true });
+                    sources.push({ id: 'zabbix', label: 'Zabbix', icon: './Zabbix_logo.svg', type: 'image', active: true });
                 }
                 if (isNessusActive) {
-                    sources.push({ id: 'nessus', label: 'Nessus', icon: '/tenablenesus.svg', type: 'image', active: true });
+                    sources.push({ id: 'nessus', label: 'Nessus', icon: './tenablenesus.svg', type: 'image', active: true });
                 }
                 if (isUptimeActive) {
-                    sources.push({ id: 'uptime', label: 'Uptime Kuma', icon: '/uptime-kuma.svg', type: 'image', active: true });
+                    sources.push({ id: 'uptime', label: 'Uptime Kuma', icon: './uptime-kuma.svg', type: 'image', active: true });
                 }
 
                 if (sources.length === 0) {
-                    sources.push({ id: 'openvas', label: 'OpenVAS', icon: '/greenbone_openvass_logo.svg', type: 'image', active: false });
-                    sources.push({ id: 'insightvm', label: 'InsightVM', icon: '/RPD.svg', type: 'image', active: false });
-                    sources.push({ id: 'wazuh', label: 'Wazuh SIEM', icon: '/wazuuu.svg', type: 'image', active: false });
-                    sources.push({ id: 'zabbix', label: 'Zabbix', icon: '/Zabbix_logo.svg', type: 'image', active: false });
-                    sources.push({ id: 'nessus', label: 'Nessus', icon: '/tenablenesus.svg', type: 'image', active: false });
-                    sources.push({ id: 'uptime', label: 'Uptime Kuma', icon: '/uptime-kuma.svg', type: 'image', active: false });
+                    sources.push({ id: 'openvas', label: 'OpenVAS', icon: './greenbone_openvass_logo.svg', type: 'image', active: false });
+                    sources.push({ id: 'insightvm', label: 'InsightVM', icon: './RPD.svg', type: 'image', active: false });
+                    sources.push({ id: 'wazuh', label: 'Wazuh SIEM', icon: './wazuuu.svg', type: 'image', active: false });
+                    sources.push({ id: 'zabbix', label: 'Zabbix', icon: './Zabbix_logo.svg', type: 'image', active: false });
+                    sources.push({ id: 'nessus', label: 'Nessus', icon: './tenablenesus.svg', type: 'image', active: false });
+                    sources.push({ id: 'uptime', label: 'Uptime Kuma', icon: './uptime-kuma.svg', type: 'image', active: false });
                 }
 
                 setActiveSources(sources);
@@ -291,7 +291,7 @@ export default function XSIAMCommandCenter() {
                         aria-label="Ver detalle del núcleo XOC"
                     >
                         <div className="absolute inset-0 rounded-full bg-blue-500/5 animate-pulse"></div>
-                        <img src="/Logo_XOC_Vectorial.svg" alt="XOC Core" className="w-20 h-20 object-contain" />
+                        <img src="./Logo_XOC_Vectorial.svg" alt="XOC Core" className="w-20 h-20 object-contain" />
                         <div className="absolute top-0 right-8 w-1.5 h-1.5 bg-blue-400 rounded-full animate-ping"></div>
                     </button>
                 </div>
@@ -401,7 +401,7 @@ export default function XSIAMCommandCenter() {
                             className="absolute bg-black/80 backdrop-blur-xl rounded-full border border-blue-500/30 flex items-center justify-center shadow-[0_0_120px_rgba(59,130,246,0.45)]"
                         >
                             <div className="absolute inset-0 rounded-full bg-blue-500/10" />
-                            <img src="/Logo_XOC_Vectorial.svg" alt="XOC Core" className="w-20 h-20 object-contain" />
+                            <img src="./Logo_XOC_Vectorial.svg" alt="XOC Core" className="w-20 h-20 object-contain" />
                         </motion.div>
                     </motion.div>
                 )}

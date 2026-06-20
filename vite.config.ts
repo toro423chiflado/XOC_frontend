@@ -5,7 +5,10 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/n/axz4ksbn6fim/b/xoc-frontend/o/',
+  build: {
+    assetsDir: ''
+  },
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {

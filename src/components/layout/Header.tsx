@@ -12,7 +12,7 @@ export default function Header() {
         <header className="h-16 border-b border-dark-border bg-dark-card/50 backdrop-blur-md sticky top-0 z-20 px-6 flex items-center justify-between">
             {/* Left */}
             <div className="flex items-center gap-3">
-                <img src="/Logo_XOC_Vectorial.svg" alt="XOC Logo" className="w-10 h-10 object-contain" />
+                <img src="./Logo_XOC_Vectorial.svg" alt="XOC Logo" className="w-10 h-10 object-contain" />
                 <div className="flex flex-col -space-y-1">
                     <div className="flex items-center gap-2">
                         <span className="text-xl font-bold bg-gradient-to-r from-neon-green to-neon-blue bg-clip-text text-transparent">

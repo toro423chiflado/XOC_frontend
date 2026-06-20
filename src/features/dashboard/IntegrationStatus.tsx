@@ -201,18 +201,18 @@ export default function IntegrationStatus() {
             id: 'openvas',
             label: 'OpenVAS Scans',
             status: { configured: isConfigured('openvas', openvasFallback), metrics: openvasMetrics },
-            icon: '/greenbone_openvass_logo.svg'
+            icon: './greenbone_openvass_logo.svg'
         },
         {
             id: 'insightvm',
             label: 'InsightVM / Rapid7',
             status: { configured: isConfigured('insightvm', insightvmFallback), metrics: insightvmMetrics },
-            icon: '/RPD.svg'
+            icon: './RPD.svg'
         },
-        { id: 'wazuh', label: 'Wazuh SIEM', status: { configured: isConfigured('wazuh', wazuhFallback), metrics: wazuhSummaryMetrics }, icon: '/wazuuu.svg' },
-        { id: 'zabbix', label: 'Zabbix Monitor', status: { configured: isConfigured('zabbix', zabbixFallback), metrics: zabbixSummaryMetrics }, icon: '/Zabbix_logo.svg' },
-        { id: 'nessus', label: 'Nessus Scans', status: { configured: isConfigured('nessus', nessusFallback), metrics: nessusSummaryMetrics }, icon: '/tenablenesus.svg' },
-        { id: 'uptime', label: 'Uptime Kuma', status: { configured: isConfigured('uptime', uptimeFallback), metrics: uptimeSummaryMetrics }, icon: '/uptime-kuma.svg' }
+        { id: 'wazuh', label: 'Wazuh SIEM', status: { configured: isConfigured('wazuh', wazuhFallback), metrics: wazuhSummaryMetrics }, icon: './wazuuu.svg' },
+        { id: 'zabbix', label: 'Zabbix Monitor', status: { configured: isConfigured('zabbix', zabbixFallback), metrics: zabbixSummaryMetrics }, icon: './Zabbix_logo.svg' },
+        { id: 'nessus', label: 'Nessus Scans', status: { configured: isConfigured('nessus', nessusFallback), metrics: nessusSummaryMetrics }, icon: './tenablenesus.svg' },
+        { id: 'uptime', label: 'Uptime Kuma', status: { configured: isConfigured('uptime', uptimeFallback), metrics: uptimeSummaryMetrics }, icon: './uptime-kuma.svg' }
     ];
 
     const getSummarySlots = (integrationId: string, rawMetrics: any): IntegrationSummarySlot[] | null => {

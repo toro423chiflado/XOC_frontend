@@ -10,7 +10,7 @@ export default function CompanyInfo() {
             {/* Navbar / Header */}
             <div className="sticky top-0 z-50 bg-dark-bg/80 backdrop-blur-md border-b border-white/5 px-6 py-4 flex justify-between items-center">
                 <div className="flex items-center gap-3">
-                    <img src="/Logo_XOC_Vectorial.svg" alt="XOC Logo" className="w-8 h-8 object-contain" />
+                    <img src="./Logo_XOC_Vectorial.svg" alt="XOC Logo" className="w-8 h-8 object-contain" />
                     <span className="font-bold text-lg tracking-wider">XOC PLATFORM <span className="text-neon-cyan text-[10px] ml-2 opacity-60">powered by TxDxSecure</span></span>
                 </div>
                 <button

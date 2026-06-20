@@ -16,7 +16,7 @@ export function WazuhHero({ model, rangeControl, onRefresh, isLoading }: WazuhHe
                 <div className="flex flex-col gap-4 xl:grid xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_340px] xl:items-start xl:gap-3">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center xl:col-span-2">
                         <div className="rounded-xl border border-white/10 bg-dark-card/70 p-3">
-                            <img src="/wazuuu.svg" alt="Wazuh Logo" className="h-10 w-10 object-contain rounded-full" />
+                            <img src="./wazuuu.svg" alt="Wazuh Logo" className="h-10 w-10 object-contain rounded-full" />
                         </div>
                         <div>
                             <div className="mb-1 flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-sky-400/80">

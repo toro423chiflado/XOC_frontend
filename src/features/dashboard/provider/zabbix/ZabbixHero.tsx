@@ -37,7 +37,7 @@ export function ZabbixHero({
                 <div className="flex flex-col gap-4 xl:grid xl:grid-cols-[minmax(0,1.6fr)_320px] xl:items-start">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                         <div className="rounded-xl border border-white/10 bg-dark-card/70 p-3">
-                            <img src="/Zabbix_logo.svg" alt="Zabbix Logo" className="h-10 w-10 object-contain" />
+                            <img src="./Zabbix_logo.svg" alt="Zabbix Logo" className="h-10 w-10 object-contain" />
                         </div>
                         <div>
                             <div className="mb-1 flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-red-400/80">

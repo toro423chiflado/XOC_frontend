@@ -2,22 +2,22 @@ import { motion } from 'framer-motion';
 
 export default function IntegrationsSection() {
   const coreStack = [
-    { name: 'Azure AI Foundry', iconPath: '/AZUREAI Foundry.png' },
-    { name: 'Microsoft Azure', iconPath: '/Microsoft_Azure.svg.png' },
-    { name: 'Claude Agent SDK', iconPath: '/awan_getting_started_claude_agent_sdk_2.png' }
+    { name: 'Azure AI Foundry', iconPath: './AZUREAI Foundry.png' },
+    { name: 'Microsoft Azure', iconPath: './Microsoft_Azure.svg.png' },
+    { name: 'Claude Agent SDK', iconPath: './awan_getting_started_claude_agent_sdk_2.png' }
   ];
 
   const securityEcosystem = [
-    { name: 'Wazuh', iconPath: '/logo-wazuh-landing.png', whiteBg: true },
-    { name: 'OpenVAS', iconPath: '/greenbone_openvass_logo.svg' },
-    { name: 'Nessus', iconPath: '/logo-nessus-landing.png' },
-    { name: 'InsightVM', iconPath: '/insightvm-rapid7-landing.png', whiteBg: true },
-    { name: 'Qualys', iconPath: '/Logo-Qualys-landing.png', whiteBg: true },
-    { name: 'Nmap', iconPath: '/nmap-logo-landing.png' },
-    { name: 'Zabbix', iconPath: '/Zabbix_logo.svg' },
-    { name: 'Splunk', iconPath: '/Splunk_logo-landing.png', whiteBg: true },
-    { name: 'Uptime Kuma', iconPath: '/uptime-kuma.svg' },
-    { name: 'Cisco Meraki', iconPath: '/meraki-logo-landing.png' }
+    { name: 'Wazuh', iconPath: './logo-wazuh-landing.png', whiteBg: true },
+    { name: 'OpenVAS', iconPath: './greenbone_openvass_logo.svg' },
+    { name: 'Nessus', iconPath: './logo-nessus-landing.png' },
+    { name: 'InsightVM', iconPath: './insightvm-rapid7-landing.png', whiteBg: true },
+    { name: 'Qualys', iconPath: './Logo-Qualys-landing.png', whiteBg: true },
+    { name: 'Nmap', iconPath: './nmap-logo-landing.png' },
+    { name: 'Zabbix', iconPath: './Zabbix_logo.svg' },
+    { name: 'Splunk', iconPath: './Splunk_logo-landing.png', whiteBg: true },
+    { name: 'Uptime Kuma', iconPath: './uptime-kuma.svg' },
+    { name: 'Cisco Meraki', iconPath: './meraki-logo-landing.png' }
   ];
 
   return (

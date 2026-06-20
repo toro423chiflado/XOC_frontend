@@ -267,7 +267,7 @@ export default function XocCoreDetail() {
 
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className="relative w-40 h-40 rounded-full bg-black/80 border border-white/10 shadow-[0_0_40px_rgba(0,255,157,0.2)] flex flex-col items-center justify-center">
-                                <img src="/Logo_XOC_Vectorial.svg" alt="XOC Core" className="w-20 h-20 object-contain" />
+                                <img src="./Logo_XOC_Vectorial.svg" alt="XOC Core" className="w-20 h-20 object-contain" />
                                 <div className="mt-2 text-[10px] font-black uppercase tracking-widest text-white">XOC Core</div>
                                 <div className="text-[9px] text-gray-500">Orquestacion</div>
                             </div>

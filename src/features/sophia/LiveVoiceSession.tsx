@@ -467,7 +467,7 @@ function VoiceOrb({ state, volume }: { state: string, volume: number }) {
                 style={{ transform: `scale(${dynamicScale})` }}
             >
                 <img
-                    src="/SOPHIA.svg"
+                    src="./SOPHIA.svg"
                     alt="S"
                     className={cn(
                         "w-20 h-20 relative z-20 transition-all duration-300",

@@ -570,7 +570,7 @@ export default function SophiaChat() {
                                 {messages.length === 0 && !isTyping && (
                                     <div className="h-full flex flex-col items-center justify-center py-20 animate-in fade-in duration-700">
                                         <div className="w-20 h-20 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6">
-                                            <img src="/SOPHIA.svg" alt="SOPHIA" className="w-12 h-12" />
+                                            <img src="./SOPHIA.svg" alt="SOPHIA" className="w-12 h-12" />
                                         </div>
                                         <h2 className="text-2xl font-black text-white mb-2 uppercase tracking-tight">¿En qué puedo ayudarte?</h2>
                                         <p className="text-gray-500 text-sm">SOPHIA tiene acceso a tus herramientas de ciberseguridad.</p>
@@ -685,7 +685,7 @@ function MessageBubble({ message, copiedId, onCopy }: { message: Message, copied
     return (
         <div className={cn("flex gap-4 animate-in fade-in duration-300", message.role === 'user' ? "flex-row-reverse" : "")}> 
             <div className={cn("w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mt-1", isAssistant ? "bg-[#0d1117] ring-1 ring-neon-green/20" : "bg-white/5")}>
-                {isAssistant ? <img src="/SOPHIA.svg" className="w-6 h-6" alt="S" /> : <User className="w-5 h-5 text-gray-400" />}
+                {isAssistant ? <img src="./SOPHIA.svg" className="w-6 h-6" alt="S" /> : <User className="w-5 h-5 text-gray-400" />}
             </div>
             <div className={cn("flex flex-col max-w-[80%]", message.role === 'user' ? "items-end" : "items-start")}>
                 <div className={cn("px-4 py-3 rounded-2xl text-[14px] leading-relaxed relative group transition-all duration-300",
@@ -768,7 +768,7 @@ function VoiceOrb({ state }: { state: string }) {
             )}>
                 {/* Internal SOPHIA Icon */}
                 <img
-                    src="/SOPHIA.svg"
+                    src="./SOPHIA.svg"
                     alt="S"
                     className={cn(
                         "w-16 h-16 transition-all duration-500",

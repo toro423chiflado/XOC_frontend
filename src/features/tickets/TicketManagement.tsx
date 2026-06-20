@@ -450,7 +450,7 @@ export default function TicketManagement() {
                                         <div className="absolute right-0 top-0 h-28 w-28 rounded-full bg-neon-green/5 blur-3xl" />
                                         <div className="flex items-start gap-4">
                                             <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-black/30 p-3 shadow-[0_0_24px_rgba(0,255,157,0.08)]">
-                                                <img src="/VICTOR.svg" alt="VICTOR" className="h-full w-full object-contain" />
+                                                <img src="./VICTOR.svg" alt="VICTOR" className="h-full w-full object-contain" />
                                             </div>
                                             <div>
                                                 <div className="text-[10px] font-black uppercase tracking-[0.24em] text-neon-green/80">Victor Orchestration</div>

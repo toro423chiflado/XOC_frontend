@@ -29,14 +29,14 @@ interface ToolMeta {
 }
 
 const TOOLS: ToolMeta[] = [
-    { id: 'openvas', name: 'OpenVAS Scanner', category: 'Vulnerability', logo: '/greenbone_openvass_logo.svg', color: '#00FF66', accent: 'bg-neon-green/10 text-neon-green' },
-    { id: 'insightvm', name: 'InsightVM Rapid7', category: 'Vulnerability', logo: '/RPD.svg', color: '#FF5C00', accent: 'bg-orange-500/10 text-orange-500' },
-    { id: 'nessus', name: 'Tenable Nessus', category: 'Vulnerability', logo: '/tenablenesus.svg', color: '#00A3FF', accent: 'bg-blue-500/10 text-blue-500' },
+    { id: 'openvas', name: 'OpenVAS Scanner', category: 'Vulnerability', logo: './greenbone_openvass_logo.svg', color: '#00FF66', accent: 'bg-neon-green/10 text-neon-green' },
+    { id: 'insightvm', name: 'InsightVM Rapid7', category: 'Vulnerability', logo: './RPD.svg', color: '#FF5C00', accent: 'bg-orange-500/10 text-orange-500' },
+    { id: 'nessus', name: 'Tenable Nessus', category: 'Vulnerability', logo: './tenablenesus.svg', color: '#00A3FF', accent: 'bg-blue-500/10 text-blue-500' },
     { id: 'qualys', name: 'Qualys Guard', category: 'Vulnerability', logo: 'Q', color: '#ED1C24', accent: 'bg-red-500/10 text-red-500' },
-    { id: 'zabbix', name: 'Zabbix Monitor', category: 'Infrastructure', logo: '/Zabbix_logo.svg', color: '#D40000', accent: 'bg-red-600/10 text-red-600' },
-    { id: 'wazuh', name: 'Wazuh SIEM', category: 'Security', logo: '/wazuuu.svg', color: '#00A3FF', accent: 'bg-sky-500/10 text-sky-500' },
+    { id: 'zabbix', name: 'Zabbix Monitor', category: 'Infrastructure', logo: './Zabbix_logo.svg', color: '#D40000', accent: 'bg-red-600/10 text-red-600' },
+    { id: 'wazuh', name: 'Wazuh SIEM', category: 'Security', logo: './wazuuu.svg', color: '#00A3FF', accent: 'bg-sky-500/10 text-sky-500' },
     { id: 'nmap', name: 'Nmap Scanner', category: 'Discovery', logo: 'M', color: '#9B51E0', accent: 'bg-purple-500/10 text-purple-500' },
-    { id: 'uptime_kuma', name: 'Uptime Kuma', category: 'Monitoring', logo: '/uptime-kuma.svg', color: '#3ecf8e', accent: 'bg-emerald-500/10 text-emerald-400' },
+    { id: 'uptime_kuma', name: 'Uptime Kuma', category: 'Monitoring', logo: './uptime-kuma.svg', color: '#3ecf8e', accent: 'bg-emerald-500/10 text-emerald-400' },
     { id: 'other', name: 'Otros Agentes', category: 'General', logo: 'A', color: '#666', accent: 'bg-gray-500/10 text-gray-500' },
 ];
 

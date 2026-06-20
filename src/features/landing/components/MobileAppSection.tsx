@@ -32,7 +32,7 @@ export default function MobileAppSection() {
         >
           <div className="relative rounded-[2.5rem] overflow-hidden">
             <video
-              src="/XOC-Dashboard.mp4"
+              src="./XOC-Dashboard.mp4"
               autoPlay
               loop
               muted
@@ -77,7 +77,7 @@ export default function MobileAppSection() {
               className="w-40 md:w-44 transition-all"
             >
               <img 
-                src="/Download_on_the_App_Store_Badge.svg.png" 
+                src="./Download_on_the_App_Store_Badge.svg.png" 
                 alt="Download on App Store" 
                 className="w-full h-auto"
               />
@@ -91,7 +91,7 @@ export default function MobileAppSection() {
               className="w-40 md:w-44 transition-all"
             >
               <img 
-                src="/Google_Play_Store_badge_EN.svg.png" 
+                src="./Google_Play_Store_badge_EN.svg.png" 
                 alt="Get it on Google Play" 
                 className="w-full h-auto"
               />

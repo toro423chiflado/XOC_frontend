@@ -158,7 +158,7 @@ export default function OpenvasScanDetail() {
                             <ArrowLeft className="w-5 h-5 text-gray-400" />
                         </button>
                         <div className="p-3 bg-white/5 border border-white/10 rounded-xl">
-                            <img src="/greenbone_openvass_logo.svg" alt="OpenVAS Logo" className="w-8 h-8 object-contain" />
+                            <img src="./greenbone_openvass_logo.svg" alt="OpenVAS Logo" className="w-8 h-8 object-contain" />
                         </div>
                         <div>
                             <div className="flex items-center gap-2 mb-1">

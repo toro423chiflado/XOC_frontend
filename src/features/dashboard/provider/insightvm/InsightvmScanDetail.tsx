@@ -93,7 +93,7 @@ export default function InsightvmScanDetail() {
                         <ArrowLeft className="w-5 h-5 text-gray-400" />
                     </button>
                     <div className="p-3 bg-white/5 border border-white/10 rounded-xl">
-                        <img src="/RPD.svg" alt="Rapid7 Logo" className="w-8 h-8 object-contain" />
+                        <img src="./RPD.svg" alt="Rapid7 Logo" className="w-8 h-8 object-contain" />
                     </div>
                     <div>
                         <h2 className="text-2xl font-black text-white uppercase tracking-tighter">Reporte de Vulnerabilidades</h2>

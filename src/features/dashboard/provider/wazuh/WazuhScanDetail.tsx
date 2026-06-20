@@ -106,7 +106,7 @@ export default function WazuhScanDetail() {
                                     <ArrowLeft className="h-5 w-5 text-gray-300" />
                                 </button>
                                 <div className="rounded-2xl border border-white/10 bg-dark-card/70 p-3">
-                                    <img src="/wazuuu.svg" alt="Wazuh Logo" className="h-10 w-10 rounded-full object-cover" />
+                                    <img src="./wazuuu.svg" alt="Wazuh Logo" className="h-10 w-10 rounded-full object-cover" />
                                 </div>
                                 <div>
                                     <div className="mb-1 flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-sky-400/80">

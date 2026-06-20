@@ -18,7 +18,7 @@ export default function Dashboard() {
                     {/* Agent Status Indicators */}
                     <div className="flex items-center gap-6 pt-1">
                         <div className="flex items-center gap-3">
-                            <img src="/SOPHIA.svg" alt="SOPHIA" className="w-6 h-6" />
+                            <img src="./SOPHIA.svg" alt="SOPHIA" className="w-6 h-6" />
                             <div className="flex items-center gap-2.5">
                                 <span className="text-sm font-bold tracking-wide text-white">SOPHIA</span>
                                 <span className="relative flex h-2.5 w-2.5 items-center justify-center">
@@ -33,7 +33,7 @@ export default function Dashboard() {
                         <div className="h-5 w-px bg-white/10" />
 
                         <div className="flex items-center gap-3">
-                            <img src="/VICTOR.svg" alt="VICTOR" className="w-6 h-6" />
+                            <img src="./VICTOR.svg" alt="VICTOR" className="w-6 h-6" />
                             <div className="flex items-center gap-2.5">
                                 <span className="text-sm font-bold tracking-wide text-white">VICTOR</span>
                                 <span className="relative flex h-2.5 w-2.5 items-center justify-center">

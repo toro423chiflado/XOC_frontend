@@ -15,7 +15,7 @@ export function NessusHero({ model, onRefresh, isLoading, rangeControl }: Nessus
                 <div className="flex flex-col gap-4 xl:grid xl:grid-cols-[minmax(0,1.6fr)_320px] xl:items-start">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                         <div className="rounded-xl border border-white/10 bg-dark-card/70 p-3">
-                            <img src="/tenablenesus.svg" alt="Nessus Logo" className="h-10 w-10 rounded-full object-cover" />
+                            <img src="./tenablenesus.svg" alt="Nessus Logo" className="h-10 w-10 rounded-full object-cover" />
                         </div>
                         <div>
                             <div className="mb-1 flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-violet-300/80">

@@ -6,13 +6,13 @@ import { useAuth } from '../../context/AuthContext';
 
 // Custom icon for SOPHIA Voice using the existing logo
 const SophiaVoiceIcon = ({ className = 'w-5 h-5' }: { className?: string }) => (
-    <img src="/SOPHIA.svg" alt="SOPHIA Voice" className={className} />
+    <img src="./SOPHIA.svg" alt="SOPHIA Voice" className={className} />
 );
 
-const WazuhSidebarIcon = ({ className = 'w-4 h-4' }: { className?: string }) => <img src="/wazuuu.svg" className={`${className} rounded-full object-cover`} alt="Wazuh" />;
-const ZabbixSidebarIcon = ({ className = 'w-4 h-4' }: { className?: string }) => <img src="/Zabbix_logo.svg" className={`${className} object-contain`} alt="Zabbix" />;
-const NessusSidebarIcon = ({ className = 'w-4 h-4' }: { className?: string }) => <img src="/tenablenesus.svg" className={`${className} rounded-full object-cover`} alt="Nessus" />;
-const UptimeSidebarIcon = ({ className = 'w-4 h-4' }: { className?: string }) => <img src="/uptime-kuma.svg" className={`${className} object-contain`} alt="Uptime Kuma" />;
+const WazuhSidebarIcon = ({ className = 'w-4 h-4' }: { className?: string }) => <img src="./wazuuu.svg" className={`${className} rounded-full object-cover`} alt="Wazuh" />;
+const ZabbixSidebarIcon = ({ className = 'w-4 h-4' }: { className?: string }) => <img src="./Zabbix_logo.svg" className={`${className} object-contain`} alt="Zabbix" />;
+const NessusSidebarIcon = ({ className = 'w-4 h-4' }: { className?: string }) => <img src="./tenablenesus.svg" className={`${className} rounded-full object-cover`} alt="Nessus" />;
+const UptimeSidebarIcon = ({ className = 'w-4 h-4' }: { className?: string }) => <img src="./uptime-kuma.svg" className={`${className} object-contain`} alt="Uptime Kuma" />;
 
 const MENU_ITEMS = [
     { label: 'Resumen', icon: LayoutDashboard, path: '/dashboard' },
@@ -28,8 +28,8 @@ const PROVIDER_DASHBOARDS = [
     { label: 'Wazuh SIEM', icon: WazuhSidebarIcon, path: '/dashboard/wazuh' },
     { label: 'Zabbix Monitor', icon: ZabbixSidebarIcon, path: '/dashboard/zabbix' },
     { label: 'Nessus Scanner', icon: NessusSidebarIcon, path: '/dashboard/nessus' },
-    { label: 'OpenVAS Scanner', icon: ({ className = 'w-4 h-4' }: { className?: string }) => <img src="/greenbone_openvass_logo.svg" className={`${className} object-contain`} alt="OpenVAS" />, path: '/dashboard/openvas' },
-    { label: 'InsightVM Rapid7', icon: ({ className = 'w-4 h-4' }: { className?: string }) => <img src="/RPD.svg" className={`${className} object-contain`} alt="InsightVM" />, path: '/dashboard/insightvm' },
+    { label: 'OpenVAS Scanner', icon: ({ className = 'w-4 h-4' }: { className?: string }) => <img src="./greenbone_openvass_logo.svg" className={`${className} object-contain`} alt="OpenVAS" />, path: '/dashboard/openvas' },
+    { label: 'InsightVM Rapid7', icon: ({ className = 'w-4 h-4' }: { className?: string }) => <img src="./RPD.svg" className={`${className} object-contain`} alt="InsightVM" />, path: '/dashboard/insightvm' },
     { label: 'Uptime Kuma', icon: UptimeSidebarIcon, path: '/dashboard/uptime' },
 ];
 
