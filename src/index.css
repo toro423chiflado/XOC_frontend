@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-green: #00ff9f;
+  --color-neon-blue: #00f0ff;
+  --color-neon-pink: #ff00ff;
+  --color-dark-bg: #0a0a0a;
+  --color-dark-card: #121212;
+  --color-dark-border: #2a2a2a;
+
+  --font-inter: 'Inter', sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-dark-bg text-gray-100 font-inter antialiased;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-zinc-600;
+}
+
+/* Markdown Styles */
+.markdown-content {
+  @apply overflow-x-auto;
+}
+
+.markdown-content table {
+  @apply w-full border-collapse border border-white/10 my-4 text-xs;
+}
+
+.markdown-content th {
+  @apply bg-white/5 border border-white/10 px-4 py-2 text-left font-black uppercase tracking-wider text-neon-green;
+}
+
+.markdown-content td {
+  @apply border border-white/5 px-4 py-2 text-gray-300;
+}
+
+.markdown-content tr:nth-child(even) {
+  @apply bg-white/[0.02];
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  @apply ml-6 my-4 space-y-2;
+}
+
+.markdown-content ul {
+  @apply list-disc;
+}
+
+.markdown-content ol {
+  @apply list-decimal;
+}
+
+.markdown-content code {
+  @apply bg-white/10 px-1.5 py-0.5 rounded font-mono text-neon-blue;
+}
+
+.markdown-content pre {
+  @apply bg-black/40 p-4 rounded-xl border border-white/5 my-4 overflow-x-auto;
+}
+
+.markdown-content img {
+  @apply rounded-xl border border-white/10 my-4 max-w-full h-auto;
+}
+
+.markdown-content p {
+  @apply mb-4 last:mb-0;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  @apply font-black uppercase tracking-tight text-white mt-6 mb-4;
+}
+
+.markdown-content h1 {
+  @apply text-xl;
+}
+
+.markdown-content h2 {
+  @apply text-lg;
+}
+
+.markdown-content h3 {
+  @apply text-base;
+}
